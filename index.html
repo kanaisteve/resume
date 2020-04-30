@@ -24,6 +24,19 @@
                 min-height: 500px;
               }
           }
+          .page-header {
+              padding-bottom: 17px;
+              margin: 18px 0;
+              border-bottom: 1px solid #ddd;
+              line-height: 1;
+              color: #373e46;
+          }
+          .heading-meta {
+              font-size: 13px;
+              color: #999;
+              font-weight: 500;
+              letter-spacing: 2px;
+          }
           .section{
               padding-top: 4vw;
               padding-bottom: 4vw;
@@ -36,8 +49,8 @@
           }
       </style>
     </head>
-    <body>
     
+    <body class="grey lighten-4">
       <!-- navbar -->
       <header>
         <nav class="nav-wrapper transparent">
@@ -47,7 +60,7 @@
                     <i class="material-icons">menu</i>
                 </a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="#photos">Photos</a></li>
+                    <li><a href="#work">Photos</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#contact">contact</a></li>
                     <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-position="bottom" data-tooltip="Instagram">
@@ -71,46 +84,149 @@
             </div>
         </nav>
       </header>
-    
-      <!-- photo / grid -->
-      <section class="container section scrollspy" id="photos">
-          <div class="row">
-              <!-- photo column -->
-              <div class="col s12 l4">
-                <img src="images/portrait.jpg" alt="" class="responsive-img materialboxed">
-              </div>
-              <!-- content column -->
-              <div class="col s12 l6 offset-l1">
-                <h2 class="indigo-text text-darken-4">Potraits</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
-              </div>
-          </div>
 
-          <div class="row">
-            <!-- photo column -->
-            <div class="col s12 l4 push-l7">
-              <img src="images/city.jpg" alt="" class="responsive-img materialboxed">
-            </div>
-            <!-- content column -->
-            <div class="col s12 l6 offset-l1 pull-l5 right-align">
-              <h2 class="indigo-text text-darken-4">Cityscapes</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
-            </div>
+      <!-- Work / Portfolio -->
+      <section class="container section scrollspy" id="work">
+        
+        <h4 class="page-header">Featured Work  <small class="heading-meta">Selected items from my portfolio</small></h4>
+        
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="images/portrait.jpg" alt="" class="responsive-img materialboxed">
+                <p class="center grey-text text-darken-2">Ecommerce Website</p>
+              </div>
+              <div class="col s12 l4">
+                <img src="images/city.jpg" alt="" class="responsive-img materialboxed">
+                <p class="center grey-text text-darken-2">Portfolio Website</p>
+              </div>
+              <div class="col s12 l4">
+                <img src="images/nature.jpg" alt="" class="responsive-img materialboxed">
+                <p class="center grey-text text-darken-2">Developer Resume</p>
+              </div>
         </div>
 
         <div class="row">
-            <!-- photo column -->
             <div class="col s12 l4">
-              <img src="images/nature.jpg" alt="" class="responsive-img materialboxed">
-            </div>
-            <!-- content column -->
-            <div class="col s12 l6 offset-l1">
-              <h2 class="indigo-text text-darken-4">Nature</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
-            </div>
+                <img src="images/portrait.jpg" alt="" class="responsive-img materialboxed">
+                <p class="center grey-text text-darken-2">Ecommerce Website</p>
+              </div>
+              <div class="col s12 l4">
+                <img src="images/city.jpg" alt="" class="responsive-img materialboxed">
+                <p class="center grey-text text-darken-2">Portfolio Website</p>
+              </div>
+              <div class="col s12 l4">
+                <img src="images/nature.jpg" alt="" class="responsive-img materialboxed">
+                <p class="center grey-text text-darken-2">Developer Resume</p>
+              </div>
         </div>
+
       </section>
-    
+
+    <!-- Recent Works -->
+    <section class="container section scrollspy" id="work-feature">
+
+        <h4 class="page-header">Portfolio  <small class="heading-meta">Here's some stuff I made recently</small></h4>
+        
+        <div class="row">
+            <!-- Card No. 1 -->
+            <div class="col s12 m4">
+                <div class="card" >
+                    <div class="card-image materialboxed">
+                        <img src="images/city.jpg" alt="stars">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title grey-text text-darken-4 activator">Ecommerce<i class="material-icons right">chevron_right</i></span>
+                        
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">E-Commerce<i class="material-icons right">close</i></span>
+                        <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                        <div class="card-action right-align">
+                            <a href="#" class="grey-text">Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+            <!-- Card No. 2 -->
+            <div class="col s12 m4">
+                <div class="card" >
+                    <div class="card-image materialboxed">
+                        <img src="images/man.jpg" alt="stars">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title grey-text text-darken-4 activator">Real Estate<i class="material-icons right">chevron_right</i></span>
+                        
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Real Estate<i class="material-icons right">close</i></span>
+                        <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                        <div class="card-action right-align">
+                            <a href="#" class="grey-text">Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+            <!-- Card No. 3 -->
+            <div class="col s12 m4">
+                <div class="card" >
+                    <div class="card-image materialboxed">
+                        <img src="images/portrait.jpg" alt="stars">
+                    </div>
+
+                    <div class="card-content">
+                        <span class="card-title grey-text text-darken-4 activator">Resume<i class="material-icons right">chevron_right</i></span> 
+                    </div>
+
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Resume<i class="material-icons right">close</i></span>
+                        <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                        <div class="card-action right-align">
+                            <a href="#" class="grey-text">Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            
+        </div>
+
+        <div class="row">
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/city.jpg" class="materialboxed" alt="city image">
+                        <span class="card-title">Portfolio</span>
+                        <a href="#work-feature" class="btn-floating halfway-fab red waves-effect waves-light"><i class="material-icons">add</i></a>
+                    </div>
+                    <div class="card-content">
+                        <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                    </div>
+                    <div class="card-action right-align">
+                        <a href="#" class="grey-text">Link</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img class="materialboxed" src="images/city.jpg" alt="city image">
+                        <a href="#work-feature" class="btn-floating halfway-fab red waves-effect waves-light"><i class="material-icons">add</i></a>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">FarmersHub</span>
+                        <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                    </div>
+                    <div class="card-action right-align">
+                        <a href="#" class="grey-text">Link</a>
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+      </section>
+  
       <!-- parallax -->
       <div class="parallax-container">
           <div class="parallax">
